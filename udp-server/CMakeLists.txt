@@ -89,8 +89,8 @@ endif ()
 
 find_package(Doxygen
         REQUIRED
-        REQUIRED dot
-        OPTIONAL_COMPONENTS mscgen dia)
+        OPTIONAL_COMPONENTS dot mscgen dia)
+
 
 set(DOXYGEN_ALWAYS_DETAILED_SEC YES)
 set(DOXYGEN_REPEAT_BRIEF YES)

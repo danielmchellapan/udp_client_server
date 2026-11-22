@@ -89,8 +89,7 @@ endif ()
 
 find_package(Doxygen
         REQUIRED
-        REQUIRED dot
-        OPTIONAL_COMPONENTS mscgen dia)
+        OPTIONAL_COMPONENTS dot mscgen dia)
 
 set(DOXYGEN_ALWAYS_DETAILED_SEC YES)
 set(DOXYGEN_REPEAT_BRIEF YES)
@@ -131,3 +130,4 @@ set(CMAKE_C_CLANG_TIDY clang-tidy -checks=${CLANG_TIDY_CHECKS};--quiet)
 
 add_executable(udp_client ${SOURCE_LIST})
 add_dependencies(udp_client doxygen)
+
